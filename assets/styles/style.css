@@ -1285,62 +1285,23 @@ a{
 }
 
 
-.form-area {
-  padding-top: 0;
-}
 
-.row.single-form {
-  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
-  /* background: #000; */
-}
 
-.leftf {
-  background: url("../imgs/091423_Super_PendantLights_D.jpg") no-repeat;
-  background-size: cover;
-  padding: 200px 98px;
-  height: 100%;
-}
 
-.leftf h2 {
-  font-family: poppins;
-  color: #fff;
-  font-weight: 700;
-  font-size: 48px;
-}
 
-.leftf h2 span {
-  font-weight: 100;
-}
 
-.rightf{
-  padding: 70px 100px;
-  position: relative;
-}
-
-.rightf i {
+.useful-links{
   position: absolute;
-  font-size: 80px;
-  left: -27px;
-  top: 40%;
-  color: #fff;
-} 
+  top: 5%;
+  right: 5%;
 
-.form-control {
-  border: 2px solid #000;
+}
+.useful-links a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
 }
 
-.rightf button {
-  border: none;
-  border-radius: 0;
-  background: #252525;
-  width: 180px;
-  color: #fff;
-  padding: 15px 0;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
-}
 
 
 
@@ -1367,3 +1328,4 @@ section .container_contact
   color: red;
   font-family: var(--primary-font);
 }
+
