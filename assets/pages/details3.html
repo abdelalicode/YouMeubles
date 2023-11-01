@@ -94,6 +94,66 @@
 
   <main>
 
+    <!-- section question OSBM-->
+  <section>
+    <div class="header ">
+      <div>
+        <h3>Have Question</h3>
+        <h2>Ask Here</h2>
+      </div>
+    </div>
+
+    <div class="container container_contact">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="validationCustom01" class="form-label ">First name</label>
+          <input type="text" class="form-control firstName" id="validationCustom01" value="" required>
+          <div class="ErroFName">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label ">Last name</label>
+          <input type="text" class="form-control lastName" id="validationCustom02" value="" required>
+          <div class="ErroLName">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label ">Email</label>
+          <input type="email" class="form-control email" id="validationCustom03" required>
+          <div class="ErroMail">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom05" class="form-label ">Phone Numer</label>
+          <input type="text" class="form-control phoneNumber" id="validationCustom05" required>
+          <div class="ErroPhone">
+          </div>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control textarea-form" placeholder="Leave a comment here" id="floatingTextarea"
+            style="height: 160px;"></textarea>
+          <div class="ErroText">
+          </div>
+          <label for="floatingTextarea">Comments</label>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary btn-submit" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
     
     <div class="container">
 
