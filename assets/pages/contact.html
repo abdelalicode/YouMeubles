@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="../styles/contact.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link
       rel="stylesheet"
@@ -108,67 +109,55 @@
                 <div class="col-sm-12 col-lg-6">
                     <div class="rightf">
                        <i class="fa fa-caret-left"></i>
-                       <form class="was-validated">
-                        <div class="mb-3">
-                          <label for="validationTextarea" class="form-label">Your Message</label>
-                          <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-                          <div class="invalid-feedback">
-                            Please enter a message in the textarea.
+                       <form>
+                        <div class="herof">
+                          <div class="input-group">
+                            <label id ="name-label" for="">NAME</label>
+                            <input id ="name-field" type="email" spellcheck="false" name="" onkeyup = "validateName()" >
+                            <span id = "name-error"></span>
                           </div>
-                        </div>
-                      
-                        <div class="form-check mb-3">
-                          <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
-                          <label class="form-check-label" for="validationFormCheck1">I confirm that all informations are true</label>
-                          <div class="invalid-feedback">Please check this!</div>
-                        </div>
-                        <div class="col-md-4 position-relative">
-                          <label for="validationTooltip01" class="form-label">Full Name</label>
-                          <input type="text" class="form-control" id="validationTooltip01" placeholder="Your full name" required>
-                          <div class="valid-tooltip">
-                            Looks good!
-                          </div>
-                        </div>
-                      
-                        <div class="mb-3">
-                          <select class="form-select" required aria-label="select example">
-                            <option value="">What is the nature of your complaint</option>
-                            <option value="1">Delivery & Shipping</option>
-                            <option value="2">Return & Refund</option>
-                            <option value="3">Others</option>
-                          </select>
-                          <div class="invalid-feedback">Please specify what area</div>
-                        </div>
-                      
-                        <div class="mb-3">
-                          <input type="file" class="form-control" aria-label="file example" required>
-                          <div class="invalid-feedback">Please enter your confirmation ticket</div>
-                        </div>
-                      
-                        <div class="mb-3">
-                          <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Send Message
-                          </button>
                           
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Message Confirmation</h1>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  Your Message has been sent successfully
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <div class="input-group">
+                            <label id ="email-label" for="">EMAIL</label>
+                            <input id ="email-field" type="email" spellcheck="false" name="" onkeyup = "validateEmail()" >
+                            <span id = "email-error"></span>
+                          </div>
+                          <br><br>
+                          <div class="input-group">
+                            <label id ="message-label" for="">YOUR MESSAGE</label>
+                            <textarea id ="message-field" rows="3" onkeyup = "validateMessage()"></textarea>
+                            <span id = "message-error"></span>
+                          </div>
+                          <div class="subit">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              SEND MESSAGE
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmation</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    Your message has been sent successfully
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </form>
+
+                      
+                     
+                    </form>
+                    
                     </div>
                 </div>
             </div>
@@ -308,6 +297,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="../js/form.js"></script>
   </body>
 </html>
