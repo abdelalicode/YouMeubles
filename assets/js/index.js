@@ -35,9 +35,9 @@ let mail = document.querySelector('.email');
 let phoneNumber = document.querySelector('.phoneNumber');
 let userMessage = document.querySelector('.textarea-form');
 let btnSubmit = document.querySelector('.btn-submit');
+let invalidCheck = document.querySelector('#invalidCheck');
 
-
-mailInfo = fName = LastN = phone = messageInfo = false;
+mailInfo = fName = LastN = phone = messageInfo = checkIsValid = false;
 
 
 btnSubmit.addEventListener('click', (e) => {
@@ -98,14 +98,29 @@ btnSubmit.addEventListener('click', (e) => {
     messageInfo = true;
   }
 
+  if(!invalidCheck.checked)
+  {
+    printf('.ErroCheck', "please Agree");
+    checkIsValid = false;
+  }
+  else if(invalidCheck.checked)
+  {
+    printf('.ErroCheck', "");
+    checkIsValid = true;
+  }
 
-  if (mailInfo === true && fName === true && LastN === true && phone === true && messageInfo === true) {
+
+  if (mailInfo === true && fName === true && LastN === true && phone === true && messageInfo === true && checkIsValid === true) {
       var params = {
         name: firstName.value,
         email: mail.value,
         phoneNmbr: phoneNumber.value,
         userMessage: userMessage.value
       }
+      document.querySelector('.popUP').style.opacity = 1;
+        setTimeout(() => {
+          document.querySelector('.popUP').style.opacity = 0;
+        }, 2000);
     
     const serviceID = 'service_k94s7qg';
     const themplateID = "template_dcvddqj";
@@ -116,7 +131,6 @@ btnSubmit.addEventListener('click', (e) => {
         phoneNmbr.value = "";
         userMessage.value = "";
         console.log(res);
-        alert("your Message was sent successfuly");
       }).catch(err=>console.log(err));
     }
     
