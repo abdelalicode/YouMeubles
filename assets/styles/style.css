@@ -1302,3 +1302,9 @@ a{
   text-decoration: none;
 }
 
+@media (max-width: 650px) {
+  #cardel {
+    gap:1%;
+  }
+
+}
