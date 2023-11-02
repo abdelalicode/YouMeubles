@@ -1329,3 +1329,8 @@ section .container_contact
   font-family: var(--primary-font);
 }
 
+
+.navtitle {
+  color: white;
+  font-size: 1.2em;
+}
