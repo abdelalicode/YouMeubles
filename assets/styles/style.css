@@ -1330,6 +1330,7 @@ section .container_contact
   font-family: var(--primary-font);
 }
 
+
 .popUP
 {
   position: fixed;
@@ -1358,3 +1359,10 @@ section .container_contact
   font-family: var(--primary-font);
   font-size: 1.2rem;
 }
+
+
+.navtitle {
+  color: white;
+  font-size: 1.2em;
+}
+
